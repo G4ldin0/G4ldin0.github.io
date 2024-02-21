@@ -1,0 +1,95 @@
+body{
+   background-color: darkblue;
+}
+
+#text{
+   background-color: black;
+   color: white;
+   padding: 10px;
+}
+
+#game{
+   max-width: 500px;
+   max-height: 400px;
+   background-color: lightgray;
+   color: white;
+   margin: auto;
+   padding: 10px;
+}
+
+#controls{
+   border: 1px black solid;
+   padding: 5px;
+   height: 24px;
+}
+
+#stats{
+   border: 1px black solid;
+   color: black;
+   padding: 5px;
+}
+
+#monsterStats{
+   display: none;
+   border: 1px black solid;
+   color: white;
+   padding: 5px;
+   background-color: red;
+}
+
+.stat{
+   padding-right: 10px;
+}
+
+#controls button{
+   color:green;
+}
+
+#InventoryView{
+   position: absolute;
+   top: 15vh;
+   left: 5px;
+   width:15vw;
+   min-height: 75vh;
+
+   display:flex;
+   flex-direction: column;
+
+   background-color: maroon;
+   border: .9vw black solid;
+   padding: 1%;
+   size:95%;
+}
+
+#InventoryTitle{
+   font-weight: 900;
+   margin: 0px auto 2% auto;
+}
+
+#InventoryView img{
+   /* width: 95%; */
+   margin: 5% 0px 5% 0px;
+}
+
+#InventoryNotSelected{
+   display: none;
+}
+
+#InventorySelected{
+   display: block;
+   box-sizing: border-box;
+   border: .3vw goldenrod solid;
+}
+
+#Instructions{
+   position: absolute;
+   left:80vw;
+    
+   width: 15vw;
+
+   padding: 1%;
+   font-weight: 500;
+
+   background-color: darkkhaki;
+   border: .9vw black solid;
+}
