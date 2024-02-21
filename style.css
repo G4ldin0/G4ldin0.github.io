@@ -83,8 +83,8 @@ body{
 
 #Instructions{
    position: absolute;
+   top: 15vh;
    left:80vw;
-    
    width: 15vw;
 
    padding: 1%;
