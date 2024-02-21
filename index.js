@@ -112,11 +112,14 @@ function update(location)
    text.innerText = location.description;
 }
 
-function goTown(){ update(locations[0]);}
+function goTown(){ 
+   document.body.style.backgroundImage = "url(assets/backgrounds/village.jpg)";
+   document.body.style.backgroundColor = "maroon";
+   update(locations[0]);}
 function goStore(){update(locations[1]);}
 function goCave(){update(locations[2]);}
 function goBack(){
-   if(Math.random() < .01){
+   if(Math.random() < .9){
       console.log("easter egg!")
       easterEgg();
    } else{
@@ -169,6 +172,7 @@ function fightBeast(){
    goFight(monsters[1]);
 }
 function fightDragon(){
+
    fighting = 2;
    goFight(monsters[2]);
 }
@@ -234,7 +238,11 @@ function defeatMonster(){
    update(locations[4]);
 }
 function lose(){update(locations[5]);}
-function winGame(){update(locations[6]);}
+function winGame(){
+   document.body.style.backgroundImage = "url(assets/backgrounds/villageWin.jpg)";
+   document.body.style.backgroundColor = "maroon";
+   update(locations[6]);
+}
 function restart(){
    xp = 0;
    health = 100;
@@ -247,7 +255,11 @@ function restart(){
    goTown();
 }
 
-function easterEgg() { update(locations[7]);}
+function easterEgg() { 
+   document.body.style.backgroundImage="url(assets/backgrounds/easteregg.jpg)";
+   document.body.style.backgroundColor= "lightblue";
+   update(locations[7]);
+}
 
 function pickTwo() { pick(2);}
 function pickEight() { pick(8);}

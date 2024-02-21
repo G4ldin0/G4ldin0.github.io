@@ -1,5 +1,9 @@
 body{
-   background-color: darkblue;
+   /* background-color: darkblue; */
+   background-image: url("assets/backgrounds/village.jpg");
+   background-color: brown;
+   background-repeat: no-repeat;
+   background-size: 100vw ;
 }
 
 #text{
